@@ -18,7 +18,9 @@ console.log(name,age);
 
 // person.greet();
 
-// const hobbies = ['Sports','Cooking'];
+const hobbies = ['Sports','Cooking']; //  array deconstruction
+const [h1,h2]=hobbies;
+console.log(h1,h2);
 // // for (let hobby of hobbies) {
 // //     console.log(hobby);
 // // };
