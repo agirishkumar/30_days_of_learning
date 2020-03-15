@@ -1,4 +1,5 @@
 const http = require('http');
+const fs = require('fs');
 // function rqListener(req, res) {
 
 // };
@@ -13,6 +14,14 @@ const server = http.createServer((req,res) => {
         res.write("</html>");
         return res.end();
 
+
+    }
+
+    if (url==="/message" && method === "POST"){
+        fs.writeFileSync('message.txt','DUmmy');
+        res.statusCode = 302;
+        res.setHeader('Location','/');
+        return res.end();
 
     }
     res.setHeader('Content-Type', 'text/html');
