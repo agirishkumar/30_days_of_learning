@@ -1,0 +1,20 @@
+{
+  "name": "30_days_of_learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "nodemon node-app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agirishkumar/30_days_of_learning.git"
+  },
+  "author": "Adari Girish kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agirishkumar/30_days_of_learning/issues"
+  },
+  "homepage": "https://github.com/agirishkumar/30_days_of_learning#readme"
+}
