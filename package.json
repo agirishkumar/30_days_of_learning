@@ -4,7 +4,7 @@
   "description": "",
   "main": "node-app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon node-app.js"
   },
   "repository": {
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/agirishkumar/30_days_of_learning/issues"
   },
-  "homepage": "https://github.com/agirishkumar/30_days_of_learning#readme"
+  "homepage": "https://github.com/agirishkumar/30_days_of_learning#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
