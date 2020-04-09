@@ -1,14 +1,24 @@
 const express = require('express');
 
 const app = express();
-app.use((req, res, next) => {
-    console.log('First Middleware');
-    next();
+// app.use((req, res, next) => {
+//     console.log('First Middleware');
+//     next();
+// });
+
+// app.use((req, res, next)=>{
+//     console.log("Second Middleware");
+//     res.send('<p>Assignment Solved!<!p>');
+// });
+
+app.use('/users',(req,res,next) => {
+    console.log('/users middlewarees');
+    res.send('<p>The Middleware that handles /users </p>');
 });
 
-app.use((req, res, next)=>{
-    console.log("Second Middleware");
-    res.send('<p>Assignment Solved!<!p>');
+app.use('/',(req, res, next)=> {
+    console.log('/ middleware ');
+    res.send('<p>The Middleware that handles just / </p>');
 });
 
 
